@@ -1,25 +1,25 @@
 class Address
 {
-    private string street;
-    private string city;
-    private string state;
-    private string country;
+    private string _street;
+    private string _city;
+    private string _state;
+    private string _country;
 
     public Address(string streetInput, string cityInput, string stateInput, string countryInput)
     {
-        street = streetInput;
-        city = cityInput;
-        state = stateInput;
-        country = countryInput;
+        _street = streetInput;
+        _city = cityInput;
+        _state = stateInput;
+        _country = countryInput;
     }
 
     public bool IsUSA()
     {
-        return country.ToLower() == "usa";
+        return _country.ToLower() == "usa";
     }
 
     public string GetFullAddress()
     {
-        return street + "\n" + city + ", " + state + "\n" + country;
+        return _street + "\n" + _city + ", " + _state + "\n" + _country;
     }
 }

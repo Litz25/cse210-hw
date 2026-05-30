@@ -1,25 +1,25 @@
 class Product
 {
-    private string name;
-    private int productId;
-    private double price;
-    private int quantity;
+    private string _name;
+    private int _productId;
+    private double _price;
+    private int _quantity;
 
     public Product(string nameInput, int idInput, double priceInput, int quantityInput)
     {
-        name = nameInput;
-        productId = idInput;
-        price = priceInput;
-        quantity = quantityInput;
+        _name = nameInput;
+        _productId = idInput;
+        _price = priceInput;
+        _quantity = quantityInput;
     }
 
     public double TotalCost()
     {
-        return price * quantity;
+        return _price * _quantity;
     }
 
     public string GetPackingInfo()
     {
-        return name + " (ID: " + productId + ")";
+        return _name + " (ID: " + _productId + ")";
     }
 }
