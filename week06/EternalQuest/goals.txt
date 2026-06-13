@@ -1,0 +1,3 @@
+0
+SimpleGoal|Reading the scripture|Scripture|100|False
+SimpleGoal|Having morning runs|Exercises|50|False
